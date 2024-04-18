@@ -30,6 +30,7 @@ app.use(cors({
   credentials: true,
   origin: process.env.FRONTEND_URL,
 }));
+console.log('Frontend URL:', process.env.FRONTEND_URL);
 
 app.use(express.json());
 UserRoutes(app);
